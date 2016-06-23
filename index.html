@@ -24,7 +24,7 @@
  <p>Sur un clavier conçu pour un PC Windows, la touche Alt remplit le même rôle que la touche Option et la touche Windows fonctionne comme la touche Commande. Certains raccourcis utilisent des touches spéciales, situées sur la rangée supérieure des claviers Mac. Ces touches comportent des icônes et permettent notamment de régler le volume du son ainsi que la luminosité de l’écran. Pour utiliser ces touches en tant que touches de fonction (F1, F2, F3, etc.), il vous faut les associer à la touche Fn. </p>
 
  <p>Pour découvrir d’autres raccourcis, consultez les menus de l’application que vous utilisez. Certains raccourcis clavier peuvent être propres à une application. De même, tous les raccourcis ne fonctionnent pas dans l’ensemble des applications. </p>
-
+ <!-- accordion 1-->
  <button class="accordion">Couper, copier, coller et autres raccourcis courants</button>
  <div class="panel">
   <table>
@@ -124,7 +124,7 @@
   </tr>
 </table>
 </div>
-
+<!-- accordion 2-->
 <button class="accordion">Raccourcis utilisables au sein de documents</button>
 <div class="panel">
   <table>
@@ -363,7 +363,7 @@
   </tr>
 </table>
 </div>
-
+<!-- accordion 3-->
 <button class="accordion">Raccourcis du Finder</button>
 <div class="panel">
   <table>
@@ -626,23 +626,23 @@
   </tr>
 </div>
 </table>
-
-<script>
-  var acc = document.getElementsByClassName("accordion");
-  var i;
-
-  for (i = 0; i < acc.length; i++) {
-    acc[i].onclick = function(){
-      this.classList.toggle("active");
-      this.nextElementSibling.classList.toggle("show");
-    }
-  }
-</script>
-
 <!-- Pied de page -->
-<footer>
-  <p>Copyright Yazweb - Tous droits réservés - <a href="mailto:youcef.ayad.zeddam@gmail.com">Envoyez-moi un e-mail !</a></p>
-</footer>
+<div>
+  <footer>
+    <p>Copyright Yazweb - Tous droits réservés - <a href="mailto:youcef.ayad.zeddam@gmail.com">Envoyez-moi un e-mail !</a></p>
+  </footer>
+  <!-- script javascript accordion-->
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
 
+    for (i = 0; i < acc.length; i++) {
+      acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+      }
+    }
+  </script>
+</div>
 </body>
 </html>

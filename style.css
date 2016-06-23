@@ -1,25 +1,29 @@
-body {
+body /* Fond, taille et police sur le body */
+{
 	background-color:#92D6FF;
 	font-family: Georgia,Times,serif;
 	font-size: 15px;
 }
 
-h1 {
+h1 /* texte centré */
+{
 	text-align: center;
 }
-table
+
+table /* bordure et fond sur tableau */
 {
     border-collapse: collapse;
     background-color:#92D6FF;
 }
-td, th /* Mettre une bordure sur les td ET les th */
+
+td, th /* bordure et fond sur les td et les th */
 {
     border: 1px solid black;
     background-color:#92D6FF;
 }
 
-/* Style the buttons that are used to open and close the accordion panel */
-button.accordion {
+button.accordion /* couleur,fond ect sur button accordion */
+{
     background-color: #FFDE2E;
     color: #444;
     cursor: pointer;
@@ -31,19 +35,20 @@ button.accordion {
     transition: 0.4s;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-button.accordion.active, button.accordion:hover {
+
+button.accordion.active, button.accordion:hover /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+{
     background-color: #FFDE2E;
 }
 
-/* Style the accordion panel. Note: hidden by default */
-div.panel {
+div.panel /* Style the accordion panel. Note: hidden by default */
+{
     padding: 0 18px;
     background-color: #FFDE2E;
     display: none;
 }
 
-/* The "show" class is added to the accordion panel when the user clicks on one of the buttons. This will show the panel content */
-div.panel.show {
+div.panel.show /* The "show" class is added to the accordion panel when the user clicks on one of the buttons. This will show the panel content */
+{
     display: block !important;
 }
